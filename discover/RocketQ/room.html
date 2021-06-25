@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/room.css">
+  <link rel="stylesheet" href="./styles/modal.css">
 </head>
 <body>
   <div id="room" class="content">
@@ -58,7 +59,7 @@
           <div class="question-wrapper">
             <div class="question-content">
               <div class="user">
-                <img src="./assets/avatar.svg" alt="Avatar">
+                <img src="./assets/user.svg" alt="Avatar">
                 <div class="question">
                   <p>Qual a diferença entre var, let e const no JavaScript?</p>
                 </div>
@@ -76,11 +77,87 @@
             </div>
           </div>
 
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="./assets/user.svg" alt="Avatar">
+                <div class="question">
+                  <p>O que é TypeScript?</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="check">
+                <img src="./assets/check.svg" alt="Marcar como lida">
+                Marcar como lida
+              </a>
+              <a href="#" class="delete">
+                <img src="./assets/trash.svg" alt="Deletar">
+                Deletar
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="./assets/user.svg" alt="Avatar">
+                <div class="question">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur maiores at neque obcaecati tenetur provident quis, blanditiis ex labore repellendus, tempore atque ducimus earum quasi quod iusto sunt incidunt ea? Natus esse adipisci fuga magni perspiciatis illum ullam harum est laboriosam expedita blanditiis ducimus incidunt nisi doloremque hic eius odit, facere consectetur. Maiores eaque eum quasi saepe officia illum, consequatur perferendis voluptates recusandae quas deleniti iure magnam esse id, velit totam molestias autem voluptate, inventore quam quo dolores facere veniam enim. Nisi possimus harum beatae placeat tenetur eaque, asperiores a suscipit odit eligendi quas explicabo mollitia maiores, et doloribus quidem?</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="check">
+                <img src="./assets/check.svg" alt="Marcar como lida">
+                Marcar como lida
+              </a>
+              <a href="#" class="delete">
+                <img src="./assets/trash.svg" alt="Deletar">
+                Deletar
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper read">
+            <div class="question-content">
+              <div class="user">
+                <img src="./assets/user.svg" alt="Avatar">
+                <div class="question">
+                  <p>O que é ReactJS?</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="check">
+                <img src="./assets/check.svg" alt="Marcar como lida">
+                Pergunta lida
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
   </div>
   
+  <!-- MODAL -->
+  <div class="modal-wrapper">
+    <div class="modal">
+      <h2>Excluir pergunta</h2>
+      <p>Tem certeza que você deseja excluir essa pergunta?</p>
+
+      <form action="">
+        <label for="password" class="sr-only">Digite sua senha de administrador</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+        <div class="buttons">
+          <div class="button gray">Cancelar</div>
+          <button class="red">Sim, excluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
   
 </body>
 </html>

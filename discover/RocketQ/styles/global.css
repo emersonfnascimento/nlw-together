@@ -107,3 +107,25 @@ button.outlined,
   color: var(--blue);
   border: 0.2rem solid var(--blue);
 }
+
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.red:hover,
+.button.red:hover {
+  filter: brightness(0.9);
+}
+
+button.gray,
+.button.gray {
+  background: var(--gray-light);
+  color: var(--gray-dark);
+}
+
+button.gray:hover,
+.button.gray:hover {
+  filter: brightness(0.9);
+}
